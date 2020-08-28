@@ -8,29 +8,42 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      body{
-          background: #231f20;
+      @font-face {
+        font-family: iranyekan;
+        font-style: normal;
+        font-weight: 500;
+        src: url("fonts/eot/iranyekanwebmedium.eot");
+        src: url("fonts/eot/iranyekanwebmedium.eot?#iefix")
+            format("embedded-opentype"),
+          url("fonts/woff/iranyekanwebmedium.woff") format("woff"),
+          url("fonts/ttf/iranyekanwebmedium.ttf") format("truetype");
       }
-      h1{
+      body {
+        background: #231f20;
+      }
+      h1 {
         color: #eaeaea;
-        font-family: 'Cinzel', serif;
+        font-family: "Cinzel", serif;
       }
-      body div a{
-          border: 5px solid #ad954f;
-          cursor: pointer;
-          color: #eaeaea;
+      body div a {
+        border: 5px solid #ad954f;
+        cursor: pointer;
+        color: #eaeaea;
       }
-      body div a:hover{
-          text-decoration: none;
-          color: #ad954f;
+      body div a:hover {
+        text-decoration: none;
+        color: #ad954f;
       }
-      body div:last-child a:first-child{
-
+      .persian{
+        font: 500 19px iranyekan;
       }
-      body div:last-child a:last-child{
-
+      .english{
+        font: 600 19px ciznel;
       }
     </style>
     <title>Sepehr Sahraian</title>
@@ -39,9 +52,13 @@
     <div class="col w100 fixed-top mt-4 text-center">
       <h1>Sepehr Sahraian</h1>
     </div>
-    <div class="row vw-100 align-self-center justify-content-around">
-        <a class="col-10 col-sm-5 col-lg-4 col-xl-3 text-center py-4 my-3">English</a>
-        <a class="col-10 col-sm-5 col-lg-4 col-xl-3 text-center py-4 my-3">فارسی</a>
+    <div class="english row vw-100 align-self-center justify-content-around">
+      <a class="col-10 col-sm-5 col-lg-4 col-xl-3 text-center py-4 my-3"
+        >English</a
+      >
+      <a class="persian col-10 col-sm-5 col-lg-4 col-xl-3 text-center py-4 my-3"
+        >فارسی</a
+      >
     </div>
   </body>
 </html>
