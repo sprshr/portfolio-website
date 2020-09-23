@@ -3,14 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-        crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"
-        rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet" />
   <style>
     @font-face {
       font-family: iranyekan;
@@ -24,6 +20,8 @@
 
     body {
       background: #231f20;
+      font: 600 ciznel;
+
     }
 
     h1 {
@@ -31,23 +29,61 @@
       font: 600 35px "Cinzel", serif;
     }
 
-    body div a {
-      border: 5px solid #ad954f;
-      cursor: pointer;
-      color: #eaeaea;
-    }
-
-    body div a:hover {
-      text-decoration: none;
+    .coming-soon {
+      font-size: 60px;
       color: #ad954f;
     }
 
-    .persian {
-      font: 500 25px iranyekan;
+    h2:after {
+      content: ' .';
+      animation: dots 1s steps(5, end) infinite;
     }
 
-    .english {
-      font: 600 25px ciznel;
+    @keyframes dots {
+
+      0%,
+      20% {
+        color: rgba(0, 0, 0, 0);
+        text-shadow:
+          .25em 0 0 rgba(0, 0, 0, 0),
+          .5em 0 0 rgba(0, 0, 0, 0);
+      }
+
+      40% {
+        color: #ad954f;
+        text-shadow:
+          .25em 0 0 rgba(22, 20, 20, 0),
+          .5em 0 0 rgba(0, 0, 0, 0);
+      }
+
+      60% {
+        text-shadow:
+          .25em 0 0 #ad954f,
+          .5em 0 0 rgba(0, 0, 0, 0);
+      }
+
+      80%,
+      100% {
+        text-shadow:
+          .25em 0 0 #ad954f,
+          .5em 0 0 #ad954f;
+      }
+    }
+
+
+    .question {
+      font-size: 22px;
+      color: #eaeaea;
+    }
+
+    .email {
+      color: #ad954f;
+      padding: 3px;
+    }
+
+    .email:hover {
+      color: #ad954f;
+      text-decoration: none;
     }
   </style>
   <title>Sepehr Sahraian</title>
@@ -58,8 +94,10 @@
     <h1>Sepehr<br>Sahraian</h1>
   </div>
   <div class="english row vw-100 align-self-center justify-content-around">
-    <a class="col-10 col-sm-5 col-lg-4 col-xl-3 text-center py-4 my-3">English</a>
-    <a class="persian col-10 col-sm-5 col-lg-4 col-xl-3 text-center py-4 my-3">فارسی</a>
+    <h2 class="coming-soon col-12 text-center">coming soon
+    </h2>
+    <p class="question pt-4">Have any question? Fell free to <a class="email" href="mailto:sepehr@sprshr.dev">email
+        me.</a></p>
   </div>
   <small class="col w100 fixed-bottom mb-4 text-center">Copyright &copy; 2020 Seyed sepehr Sahraian. All Rights
     Reserved</small>
